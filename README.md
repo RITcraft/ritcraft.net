@@ -39,3 +39,7 @@ This part of the site can be an almost direct copy-paste of the last paragraph o
 
 ## I want to help!
 Want to help with either this website or RITCraft? Awesome! Feel free to submit pull requests to this repo if you want to help with the website, or if you want to help with the server, join our Telegram group chat. To prevent the spam bots from finding us, we won't link the invite URL here, but the link is constantly cycled through the server in-game - look for it there!
+
+
+## Website Info
+This website uses the excellent Minecraft Server Status script by [FunnyItsElmo](https://github.com/FunnyItsElmo/PHP-Minecraft-Server-Status-Query)
