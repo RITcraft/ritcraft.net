@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="The unofficial Minecraft server of the Rochester Institute of Technology (RIT).">
     <meta name="author" content="">
 
-    <title>RITCraft - the unofficial RIT Minecraft Server</title>
+    <title>RITCraft - unofficial RIT Minecraft Server</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="./about/">About</a>
+                        <a href="http://rit.j-f.co:8123/">DynMap</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
 
                 <h3>Server Status</h3>
                 <?php
-                    $response = $status->getStatus('rit.j-f.co');
+                    $response = $status->getStatus('rit.j-f.co', 30000, 1.8.x);
                     if (!$response) {
                         echo "<strong class=\"glyphicon glyphicon-remove\">  server is offline</strong>";
                     } else {
@@ -103,6 +103,7 @@
             </div>
         </div>
         <hr>
+
         <!-- Footer -->
         <footer>
             <div class="row">
