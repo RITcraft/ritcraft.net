@@ -22,7 +22,7 @@ cd $HOME/RITcraft-Site && git pull
 #####################################################
 # Delete all files in Apache virtualhost            #
 #####################################################
-cd $APACHEDIR && rm -r
+cd $APACHEDIR && rm -r *
 
 #####################################################
 # Copy the files from the git repo into virtualhost #
