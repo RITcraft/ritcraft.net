@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://rit.j-f.co:8123/">DynMap</a>
+                        <a href="http://rit.j-f.co:8123/" target="_blank">DynMap</a>
                     </li>
                 </ul>
             </div>
