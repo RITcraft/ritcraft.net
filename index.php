@@ -103,7 +103,7 @@
                 		<li>Technical Planning (plugins to make the server more enjoyabe for all)</li>
                 		<li>Adventurers (those who set forth and conquer the world!)</li>
                 	</ul>
-                <p>Feel free to submit pull requests to <a href="https://github.com/jflory7/RITcraft-Site" target="_blank">this repo</a> if you want to help with the website, or if you want to help with the server, join our Telegram group chat.
+                <p>Feel free to submit pull requests to <a href="https://github.com/RITcraft/RITcraft-Site" target="_blank">this repo</a> if you want to help with the website, or if you want to help with the server, join our Telegram group chat.
                 <p>To prevent the spam bots from finding us, we won't link the invite URL here, but the link is constantly cycled through the server in-game - look for it there!
             </div>
         </div>
@@ -113,7 +113,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; RITcraft 2015. View this project on <a href="https://github.com/jflory7/RITcraft-Site" target="_blank">GitHub</a>.</p>
+                    <p>Copyright &copy; RITcraft 2015. View this project on <a href="https://github.com/RITcraft/RITcraft-Site" target="_blank">GitHub</a>.</p>
                 </div>
             </div>
         </footer>
