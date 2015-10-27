@@ -10,6 +10,9 @@
 
     <title>RITcraft - unofficial RIT Minecraft Server</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
