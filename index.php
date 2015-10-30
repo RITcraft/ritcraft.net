@@ -46,6 +46,9 @@
                     <li>
                         <a href="http://rit.j-f.co:8123/" target="_blank">DynMap</a>
                     </li>
+                    <li>
+                        <a href="http://rit.j-f.co/calendar.html">Events Calendar</a>
+                    </li>
                 </ul>
             </div>
         </div>
