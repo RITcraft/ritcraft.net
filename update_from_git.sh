@@ -28,4 +28,4 @@ cd $APACHEDIR && rm -r *
 # Copy the files from the git repo into virtualhost #
 #####################################################
 cd $HOME/RITcraft-Site
-cp -r css/ fonts/ images/ js/ reports/ index.php sitemap.xml.gz status.class.php template.html $APACHEDIR
+cp -r calendar/ css/ fonts/ images/ js/ reports/ index.php sitemap.xml.gz status.class.php template.html $APACHEDIR
