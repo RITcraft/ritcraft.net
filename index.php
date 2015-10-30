@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The unofficial Minecraft server of the Rochester Institute of Technology (RIT).">
+    <meta name="description" content="The official Minecraft server of the Rochester Institute of Technology (RIT).">
     <meta name="author" content="">
 
-    <title>RITcraft - unofficial RIT Minecraft Server</title>
+    <title>RITcraft - Official RIT Minecraft Server</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="favicon.ico">
@@ -47,7 +47,7 @@
                         <a href="http://rit.j-f.co:8123/" target="_blank">DynMap</a>
                     </li>
                     <li>
-                        <a href="http://rit.j-f.co/calendar.html">Events Calendar</a>
+                        <a href="calendar/">Events Calendar</a>
                     </li>
                 </ul>
             </div>
