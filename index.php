@@ -98,7 +98,7 @@
                 <p>We try to always be on the latest version of Minecraft.
                 <p>To join the server, add <strong>rit.j-f.co</strong> to your server list.
                 <h3>Server Info</h3>
-                <img src="./images/spawn.png"></img>
+                <img src="./images/serverip.png"></img>
             </div>
         </div>
 
