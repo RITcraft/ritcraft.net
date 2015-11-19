@@ -97,7 +97,7 @@
             </div>
             <div class="col-md-4">
                 <h3>How to connect</h3>
-                <p>The server runs on the latest stable version of PaperSpigot, a fork of the popular Minecraft server software Spigot.
+                <p>The server runs on the latest stable version of PaperSpigot, a fork of the popular Minecraft server software <a href="https://www.spigotmc.org">Spigot</a>.
                 <p>We try to always be on the latest version of Minecraft.
                 <p>To join the server, add <strong>rit.j-f.co</strong> to your server list.
                 <h3>Server Info</h3>
