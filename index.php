@@ -47,10 +47,13 @@
                         <a href="http://rit.j-f.co:8123/" target="_blank">DynMap</a>
                     </li>
                     <li>
+                        <a href="http://rit.j-f.co:3333/" target="_blank">Trading Post</a>
+                    </li>
+                    <li>
                         <a href="calendar/">Events Calendar</a>
                     </li>
                     <li>
-                        <a href="http://vwserver.student.rit.edu:8080">Jenkins</a>
+                        <a href="http://vwserver.student.rit.edu:8080" target="_blank">Jenkins</a>
                     </li>
                 </ul>
             </div>
