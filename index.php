@@ -93,7 +93,7 @@
                  ?>
             </div>
             <div class="col-md-4">
-                <img class="img-responsive" src="./images/server.jpg" alt="">
+                <img class="img-responsive" src="./images/spawn.png" alt="">
             </div>
             <div class="col-md-4">
                 <h3>How to connect</h3>
