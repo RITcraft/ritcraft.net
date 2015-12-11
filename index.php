@@ -81,7 +81,7 @@
 
                 <h3>Server Status</h3>
                 <?php
-                    $response = $status->getStatus('rit.j-f.co', 30000, 1.8.x);
+                    $response = $status->getStatus('rit.j-f.co', 30000, '1.8.x');
                     if (!$response) {
                         echo "<strong class=\"glyphicon glyphicon-remove\">  Server is offline.</strong>";
                     } else {
