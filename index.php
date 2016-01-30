@@ -125,7 +125,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; RITcraft 2015. View this project on <a href="https://github.com/RITcraft/RITcraft-Site" target="_blank">GitHub</a>.</p>
+                    <p>Copyright &copy; RITcraft 2015-2016. View this project on <a href="https://github.com/RITcraft/RITcraft-Site" target="_blank">GitHub</a>.</p>
                 </div>
             </div>
         </footer>
