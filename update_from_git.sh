@@ -20,9 +20,9 @@ WEBDIR=/var/www/rit.j-f.co/public_html
 cd $HOME/RITcraft-Site && git pull
 
 #####################################################
-# Delete all files in Apache virtualhost            #
+# Delete all known files in web server directory    #
 #####################################################
-cd $WEBDIR && rm -r *
+cd $WEBDIR && rm -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index.php sitemap.xml.gz status.class.php template.html
 
 #####################################################
 # Copy the files from the git repo into virtualhost #
