@@ -20,9 +20,21 @@
     <link href="css/portfolio-item.css" rel="stylesheet">
 
 <?php
-    include_once 'status.class.php'; // Include the server status monitor script
-    $status = new MinecraftServerStatus();
-?>
+use MinecraftServerStatus\MinecraftServerStatus;
+
+require '../vendor/autoload.php';
+
+$response = MinecraftServerStatus::query('mc.ritcraft.net', 30000);
+
+if (! $response) {
+    echo "RITcraft is offline!";
+} else {
+    echo "<img width=\"64\" height=\"64\" src=\"" . $response['favicon'] . "\" /> <br>
+		RITcraft " . $response['hostname'] . " is running on " . $response['version'] . " and is online,
+		currently are " . $response['players'] . " players online
+		of a maximum of " . $response['max_players'] . ". The motd of the server is '" . $response['description'] . "'.
+		The server has a ping of " . $response['ping'] . " milliseconds.";
+} ?>
 
 </head>
 
