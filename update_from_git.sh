@@ -12,7 +12,7 @@
 #    painless and simple as possible
 #
 
-WEBDIR=/var/www/rit.j-f.co/public_html
+WEBDIR=/var/www/ritcraft.net/public_html
 
 #####################################################
 # Pull down the latest changes from GitHub          #
