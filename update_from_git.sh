@@ -12,12 +12,13 @@
 #    painless and simple as possible
 #
 
-WEBDIR=/var/www/rit.j-f.co/public_html
+WEBDIR=/var/www/ritcraft.net/public_html
+HOMEDIR=$HOME/websites/ritcraft.net
 
 #####################################################
 # Pull down the latest changes from GitHub          #
 #####################################################
-cd $HOME/RITcraft-Site && git pull
+cd $HOMEDIR && git pull
 
 #####################################################
 # Delete all known files in web server directory    #
@@ -27,5 +28,5 @@ cd $WEBDIR && rm -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index
 #####################################################
 # Copy the files from the git repo into virtualhost #
 #####################################################
-cd $HOME/RITcraft-Site
+cd $HOMEDIR
 cp -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index.php sitemap.xml.gz status.class.php template.html $WEBDIR

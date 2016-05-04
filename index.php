@@ -44,10 +44,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://rit.j-f.co:8123/" target="_blank">DynMap</a>
+                        <a href="http://mc.ritcraft.net:8123/" target="_blank">DynMap</a>
                     </li>
                     <li>
-                        <a href="http://rit.j-f.co:3333/" target="_blank">Trading Post</a>
+                        <a href="http://mc.ritcraft.net:3333/" target="_blank">Trading Post</a>
                     </li>
                     <li>
                         <a href="calendar/">Events Calendar</a>
@@ -122,7 +122,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; RITcraft 2015-2016. View this project on <a href="https://github.com/RITcraft/RITcraft-Site" target="_blank">GitHub</a>.</p>
+                    <p>Copyright &copy; RITcraft 2015-2016. View this project on <a href="https://github.com/RITcraft/ritcraft.net" target="_blank">GitHub</a>.</p>
                 </div>
             </div>
         </footer>
