@@ -23,10 +23,10 @@ cd $HOMEDIR && git pull
 #####################################################
 # Delete all known files in web server directory    #
 #####################################################
-cd $WEBDIR && rm -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index.php sitemap.xml.gz status.class.php template.html
+cd $WEBDIR && rm -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index.* sitemap.xml.gz status.class.php template.html
 
 #####################################################
 # Copy the files from the git repo into virtualhost #
 #####################################################
 cd $HOMEDIR
-cp -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index.php sitemap.xml.gz status.class.php template.html $WEBDIR
+cp -r calendar/ css/ fonts/ images/ js/ reports/ favicon.ico index.* sitemap.xml.gz status.class.php template.html $WEBDIR
