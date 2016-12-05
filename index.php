@@ -69,20 +69,11 @@
             <div class="col-md-4">
                 <h3>Introduction</h3>
                 <p>The RIT Minecraft server (also known as "RITcraft") is a semi-vanilla Minecraft server hosted by RIT students, for RIT students.
-                <p>The server is hosted on a machine on the university campus (visit derezzed.student.rit.edu to see) and is intended as a place for Minecrafters across campus to come together.
-
+				<p>The server is hosted on a machine on the university campus and is intended as a place for Minecrafters across campus to come together.
                 <h3>Server Status</h3>
                 <?php
-                    $response = $status->getStatus('rit.j-f.co', 30000, '1.8.x');
-                    if (!$response) {
-                        echo "<strong class=\"glyphicon glyphicon-remove\">  Server is offline.</strong>";
-                    } else {
-                        echo "<strong>rit.j-f.co is online</strong>";
-                        echo "</br><span><em>Version</em>: " . $response['version'] . "</span>";
-                        echo "</br><span><em>Players</em>: " . $response['players'] . " / " . $response['maxplayers'] ."</span>";
-                        echo "</br><span><em>MOTD</em>: " . $response['motd'] . "</span>";
-                    }
-                 ?>
+					include 'status.php';
+				?>
             </div>
             <div class="col-md-4">
                 <img class="img-responsive" src="./images/spawn.png" alt="">
@@ -91,7 +82,7 @@
                 <h3>How to connect</h3>
                 <p>The server runs on the latest stable version of PaperSpigot, a fork of the popular Minecraft server software <a href="https://www.spigotmc.org">Spigot</a>.
                 <p>We try to always be on the latest version of Minecraft.
-                <p>To join the server, add <strong>rit.j-f.co</strong> to your server list.
+                <p>To join the server, add <strong>mc.ritcraft.net</strong> to your server list.
                 <h3>Server Info</h3>
                 <img src="./images/RITCraft_ip_banner.png" width='327px'></img>
             </div>
