@@ -1,4 +1,8 @@
 <?php
+
+
+
+
 /**
  * Minecraft Server Status Query
  *
@@ -7,10 +11,61 @@
  * @copyright   Copyright (c) 2016 Julian Spravil
  * @license     https://github.com/FunnyItsElmo/PHP-Minecraft-Server-Status-Query/blob/master/LICENSE
  */
-namespace MinecraftServerStatus;
-use MinecraftServerStatus\Packets\HandshakePacket;
-use MinecraftServerStatus\Packets\PingPacket;
+ 
+ 
+ class Packet {
 
+    protected $packetID;
+
+    protected $data;
+
+    public function __construct ($packetID) {
+        $this->packetID = $packetID;
+        $this->data = pack('C', $packetID);
+    }
+
+    public function addSignedChar ($data) {
+        $this->data .= pack('c', $data);
+    }
+
+    public function addUnsignedChar ($data) {
+        $this->data .= pack('C', $data);
+    }
+
+    public function addSignedShort ($data) {
+        $this->data .= pack('s', $data);
+    }
+
+    public function addUnsignedShort ($data) {
+        $this->data .= pack('S', $data);
+    }
+
+    public function addString ($data) {
+        $this->data .= pack('C', strlen($data));
+        $this->data .= $data;
+    }
+
+    public function send ($socket) {
+        $this->data = pack('C', strlen($this->data)) . $this->data;
+        socket_send($socket, $this->data, strlen($this->data), 0);
+    }
+}
+class HandshakePacket extends Packet {
+
+    public function __construct ($host, $port, $protocol, $nextState) {
+        parent::__construct(0);
+        $this->addUnsignedChar($protocol);
+        $this->addString($host);
+        $this->addUnsignedShort($port);
+        $this->addUnsignedChar($nextState);
+    }
+}
+class PingPacket extends Packet {
+
+    public function __construct () {
+        parent::__construct(0);
+    }
+}
 class MinecraftServerStatus {
 
     /**
@@ -49,12 +104,20 @@ class MinecraftServerStatus {
         $description = $descriptionRaw;
         
         // colorize the description if it is supported
-        if (gettype($descriptionRaw) == 'object' && isset($descriptionRaw->extra)) {
+        if (gettype($descriptionRaw) == 'object') {
             $description = '';
-            foreach ($descriptionRaw->extra as $item) {
-                $description .= isset($item->bold) && $item->bold ? '<b>' : '';
-                $description .= '<font color="' . $item->color . '">' . $item->text . '</font>';
-                $description .= isset($item->bold) && $item->bold ? '</b>' : '';
+            
+            if (isset($descriptionRaw->text)) {
+                $color = isset($descriptionRaw->color) ? $descriptionRaw->color : '';
+                $description = '<font color="' . $color . '">' . $descriptionRaw->text . '</font>';
+            }
+            
+            if (isset($descriptionRaw->extra)) {
+                foreach ($descriptionRaw->extra as $item) {
+                    $description .= isset($item->bold) && $item->bold ? '<b>' : '';
+                    $description .= isset($item->color) ? '<font color="' . $item->color . '">' . $item->text . '</font>' : '';
+                    $description .= isset($item->bold) && $item->bold ? '</b>' : '';
+                }
             }
         }
         
@@ -93,3 +156,18 @@ class MinecraftServerStatus {
         return $a;
     }
 }
+
+
+
+$response = MinecraftServerStatus::query('mc.ritcraft.net', 30000);
+
+if (!$response) {
+                        echo "<strong class=\"glyphicon glyphicon-remove\">  Server is offline.</strong>";
+                    } else {
+						echo "<img width=\"64\" height=\"64\" src=\"" . $response['favicon'] . "\" /> <br>";
+                        echo "<strong>mc.ritcraft.net is online</strong>";
+                        echo "</br><span><em>Version</em>: " . $response['version'] . "</span>";
+                        echo "</br><span><em>Players</em>: " . $response['players'] . " / " . $response['max_players'] ."</span>";
+                        echo "</br><span><em>MOTD</em>: " . $response['description'] . "</span>";
+                    }
+?>
