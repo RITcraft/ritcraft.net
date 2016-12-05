@@ -98,7 +98,7 @@
                 		<li>Technical Planning (plugins to make the server more enjoyabe for all)</li>
                 		<li>Adventurers (those who set forth and conquer the world!)</li>
                 	</ul>
-                <p>Feel free to submit pull requests to <a href="https://github.com/RITcraft/RITcraft-Site" target="_blank">this repo</a> if you want to help with the website, or if you want to help with the server, join our Slack team.
+                <p>Feel free to submit pull requests to <a href="https://github.com/RITcraft/ritcraft.net" target="_blank">this repo</a> if you want to help with the website, or if you want to help with the server, join our Slack team.
                 <p>To join our Slack team, <a href="https://ritcraft.slack.com" target="_blank">sign up</a> with a valid @rit.edu email address. If you wish to use a non-RIT email, contact Justin privately. When you first join, introduce yourself in #introductions with your name, major, campus living, and what you like to do in Minecraft!
             </div>
         </div>
