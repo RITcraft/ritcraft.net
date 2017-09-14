@@ -165,12 +165,12 @@ function stripColorCodes($description) {
 $response = MinecraftServerStatus::query('mc.ritcraft.net', 30000);
 
 if (!$response) {
-                        echo "<strong class=\"glyphicon glyphicon-remove\">  Server is offline.</strong>";
-                    } else {
-			echo "<img width=\"64\" height=\"64\" src=\"" . $response['favicon'] . "\" /> <br>";
-                        echo "<strong>mc.ritcraft.net is online</strong>";
-                        echo "</br><span><em>Version</em>: " . $response['version'] . "</span>";
-                        echo "</br><span><em>Players</em>: " . $response['players'] . " / " . $response['max_players'] ."</span>";
-                        echo "</br><span><em>MOTD</em>: " . stripColorCodes($response['description']) . "</span>";
-                    }
+	echo "<strong class=\"glyphicon glyphicon-remove\">  Server is offline.</strong>";
+} else {
+	echo "<img width=\"64\" height=\"64\" src=\"" . $response['favicon'] . "\" /> <br>";
+        echo "<strong>mc.ritcraft.net is online</strong>";
+        echo "</br><span><em>Version</em>: " . $response['version'] . "</span>";
+        echo "</br><span><em>Players</em>: " . $response['players'] . " / " . $response['max_players'] ."</span>";
+        echo "</br><span><em>MOTD</em>: " . stripColorCodes($response['description']) . "</span>";
+}
 ?>
